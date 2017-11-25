@@ -1,7 +1,7 @@
 # @vx/demo
 
 This is a fork of the
-[demo repo](https://github.com/stormasm/vx-demo).
+[vx-demo](https://github.com/stormasm/vx-demo).
 
 The goal will be to
 overlay the following

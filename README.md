@@ -5,8 +5,8 @@ This is a fork of the
 
 The goal will be to
 overlay the following
-[core files](https://github.com/stormasm/mui-drawer#part-one)
-from **mui-drawer** inside this
+[core files](https://github.com/stormasm/mui-drawer-no-redux)
+from **mui-drawer-no-redux** inside this
 existing
 [vx-demo](https://github.com/stormasm/vx-demo)
 infrastructure.

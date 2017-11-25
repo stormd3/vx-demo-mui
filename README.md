@@ -1,12 +1,23 @@
 # @vx/demo
 
 This is a fork of the
-[demo repo](https://github.com/hshoff/vx/tree/master/packages/vx-demo).
+[demo repo](https://github.com/stormasm/vx-demo).
 
-* with the additional added functionality of the
-[shownocode](https://github.com/stormasm/vx-demo/blob/bp1/components/shownocode.js)
-concept
-* instead of
-[showcode](https://github.com/stormasm/vx-demo/blob/bp1/components/show.js)
-which enables a dropdown of the code associated
-with the demo.
+The goal will be to
+overlay the following
+[core files](https://github.com/stormasm/mui-drawer#part-one)
+from **mui-drawer** inside this
+existing
+[vx-demo](https://github.com/stormasm/vx-demo)
+infrastructure.
+
+### Part One
+
+Consists of the core infrastructure code including
+
+* withRoot
+* AppWrapper
+* AppFrame
+* AppDrawer
+* AppDrawerNavItem
+* Link

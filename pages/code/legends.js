@@ -1,8 +1,9 @@
 import React from 'react';
 import Show from 'components/show';
 import Legends from 'components/tiles/legends';
+import withRoot from 'docs/src/modules/components/withRoot';
 
-export default () => {
+function Page() {
   return (
     <Show
       events
@@ -226,3 +227,5 @@ export default ({ width, height, margin }) => {
     </Show>
   );
 };
+
+export default withRoot(Page);

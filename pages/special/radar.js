@@ -1,6 +1,6 @@
 import React from 'react';
-import Show from '../components/show';
-import Radar from '../components/tiles/radar';
+import Show from 'components/show';
+import Radar from 'components/tiles/radar';
 
 export default () => {
   return (

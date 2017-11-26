@@ -19,11 +19,11 @@ if (process.browser) {
 const pages = [
   {
     ...findPages[1],
-    title: 'Component Demos',
+    title: 'Code',
   },
   {
     ...findPages[0],
-    title: 'Component API',
+    title: 'Special',
   },
   {
     pathname: '/nocode',

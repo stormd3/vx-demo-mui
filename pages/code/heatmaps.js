@@ -1,6 +1,6 @@
 import React from 'react';
-import Show from '../components/show';
-import Heatmap from '../components/tiles/heatmap';
+import Show from 'components/show';
+import Heatmap from 'components/tiles/heatmap';
 
 export default () => {
   return (

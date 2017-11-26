@@ -1,6 +1,6 @@
 import React from 'react';
-import Show from '../components/show';
-import VoronoiChart from '../components/charts/VoronoiChart';
+import Show from 'components/show';
+import VoronoiChart from 'components/charts/VoronoiChart';
 
 export default () => {
   return (

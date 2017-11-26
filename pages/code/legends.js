@@ -1,6 +1,6 @@
 import React from 'react';
-import Show from '../components/show';
-import Legends from '../components/tiles/legends';
+import Show from 'components/show';
+import Legends from 'components/tiles/legends';
 
 export default () => {
   return (

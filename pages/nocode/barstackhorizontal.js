@@ -1,6 +1,6 @@
 import React from 'react';
-import Show from '../components/shownocode';
-import BarStackHorizontal from '../components/tiles/barstackhorizontal';
+import Show from 'components/shownocode';
+import BarStackHorizontal from 'components/tiles/barstackhorizontal';
 
 export default () => {
   return (

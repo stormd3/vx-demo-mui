@@ -29,7 +29,8 @@
           {
             "alias": {
               "pages": "./pages",
-              "docs": "./docs"
+              "docs": "./docs",
+              "components": "./components"
             }
           }
         ],

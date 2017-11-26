@@ -1,6 +1,6 @@
 import React from 'react';
-import Show from '../components/shownocode';
-import Areas from '../components/tiles/area';
+import Show from 'components/shownocode';
+import Areas from 'components/tiles/area';
 
 export default () => {
   return (

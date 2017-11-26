@@ -1,6 +1,8 @@
 import React from 'react';
-import Show from '../components/shownocode';
-import Pie from '../components/tiles/pie';
+import Show from 'components/shownocode';
+import Pie from 'components/tiles/pie';
+
+import withRoot from 'docs/src/modules/components/withRoot';
 
 export default () => {
   return (

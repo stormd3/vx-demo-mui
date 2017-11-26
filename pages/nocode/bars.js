@@ -1,6 +1,6 @@
 import React from 'react';
-import Show from '../components/shownocode';
-import Bars from '../components/tiles/bars';
+import Show from 'components/shownocode';
+import Bars from 'components/tiles/bars';
 
 export default () => {
   return (

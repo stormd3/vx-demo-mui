@@ -1,6 +1,6 @@
 import React from 'react';
-import Show from '../components/shownocode';
-import Responsive from '../components/tiles/responsive';
+import Show from 'components/shownocode';
+import Responsive from 'components/tiles/responsive';
 
 export default () => {
   return (

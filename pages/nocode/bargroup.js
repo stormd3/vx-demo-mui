@@ -1,6 +1,6 @@
 import React from 'react';
-import Show from '../components/shownocode';
-import BarGroup from '../components/tiles/bargroup';
+import Show from 'components/shownocode';
+import BarGroup from 'components/tiles/bargroup';
 
 export default () => {
   return (

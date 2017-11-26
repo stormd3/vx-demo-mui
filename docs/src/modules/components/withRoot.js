@@ -26,25 +26,28 @@ const pages = [
     title: 'Component API',
   },
   {
-    pathname: '/discover-more',
+    pathname: '/nocode',
     children: [
       {
-        pathname: '/discover-more/installation',
+        pathname: '/nocode/areas',
       },
       {
-        pathname: '/discover-more/vision',
+        pathname: '/nocode/axis',
       },
       {
-        pathname: '/discover-more/community',
+        pathname: '/nocode/bargroup',
       },
       {
-        pathname: '/discover-more/showcase',
+        pathname: '/nocode/bars',
       },
       {
-        pathname: '/discover-more/related-projects',
+        pathname: '/nocode/barstackhorizontal',
       },
       {
-        pathname: '/discover-more/roadmap',
+        pathname: '/nocode/pies',
+      },
+      {
+        pathname: '/nocode/responsive',
       },
     ],
   },

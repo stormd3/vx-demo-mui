@@ -2,7 +2,7 @@ import Home from './home';
 
 import compose from 'recompose/compose';
 import { withStyles } from 'material-ui/styles';
-import withRoot from './../docs/src/modules/components/withRoot';
+import withRoot from 'docs/src/modules/components/withRoot';
 
 const styles = theme => ({
   root: {

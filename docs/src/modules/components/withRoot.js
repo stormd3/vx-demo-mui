@@ -6,7 +6,6 @@ import find from 'lodash/find';
 import pure from 'recompose/pure';
 import wrapDisplayName from 'recompose/wrapDisplayName';
 import AppWrapper from 'docs/src/modules/components/AppWrapper';
-//import initRedux from 'docs/src/modules/redux/initRedux';
 import findPages from /* preval */ 'docs/src/modules/utils/findPages';
 import { loadCSS } from 'fg-loadcss/src/loadCSS';
 
@@ -82,7 +81,6 @@ function withRoot(BaseComponent) {
   const PureBaseComponent = pure(BaseComponent);
 
   type WithRootProps = {
-    // reduxServerState?: Object,
     sheetsRegistry?: Object,
     url: Object,
   };
@@ -96,7 +94,6 @@ function withRoot(BaseComponent) {
 
     static getInitialProps(ctx) {
       let initialProps = {};
-      // const redux = initRedux({});
 
       if (BaseComponent.getInitialProps) {
         const baseComponentInitialProps = BaseComponent.getInitialProps({ ...ctx });
@@ -112,15 +109,11 @@ function withRoot(BaseComponent) {
 
       return {
         ...initialProps,
-        // No need to include other initial Redux state because when it
-        // initialises on the client-side it'll create it again anyway
-        // reduxServerState: redux.getState(),
       };
     }
 
     constructor(props, context) {
       super(props, context);
-      // this.redux = initRedux(this.props.reduxServerState || {});
     }
 
     getChildContext() {
@@ -130,8 +123,6 @@ function withRoot(BaseComponent) {
         activePage: findActivePage(pages, this.props.url),
       };
     }
-
-    // redux = null;
 
     render() {
       const { sheetsRegistry, ...other } = this.props;

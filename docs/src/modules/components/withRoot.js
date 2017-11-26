@@ -82,7 +82,7 @@ function withRoot(BaseComponent) {
   const PureBaseComponent = pure(BaseComponent);
 
   type WithRootProps = {
-    reduxServerState?: Object,
+    // reduxServerState?: Object,
     sheetsRegistry?: Object,
     url: Object,
   };
@@ -96,10 +96,10 @@ function withRoot(BaseComponent) {
 
     static getInitialProps(ctx) {
       let initialProps = {};
-      const redux = initRedux({});
+      // const redux = initRedux({});
 
       if (BaseComponent.getInitialProps) {
-        const baseComponentInitialProps = BaseComponent.getInitialProps({ ...ctx, redux });
+        const baseComponentInitialProps = BaseComponent.getInitialProps({ ...ctx });
         initialProps = {
           ...baseComponentInitialProps,
           ...initialProps,
@@ -114,13 +114,13 @@ function withRoot(BaseComponent) {
         ...initialProps,
         // No need to include other initial Redux state because when it
         // initialises on the client-side it'll create it again anyway
-        reduxServerState: redux.getState(),
+        // reduxServerState: redux.getState(),
       };
     }
 
     constructor(props, context) {
       super(props, context);
-      this.redux = initRedux(this.props.reduxServerState || {});
+      // this.redux = initRedux(this.props.reduxServerState || {});
     }
 
     getChildContext() {
@@ -131,7 +131,7 @@ function withRoot(BaseComponent) {
       };
     }
 
-    redux = null;
+    // redux = null;
 
     render() {
       const { sheetsRegistry, ...other } = this.props;

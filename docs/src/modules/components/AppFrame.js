@@ -17,7 +17,6 @@ import FormatTextdirectionLToR from 'material-ui-icons/FormatTextdirectionLToR';
 import FormatTextdirectionRToL from 'material-ui-icons/FormatTextdirectionRToL';
 import AppDrawer from 'docs/src/modules/components/AppDrawer';
 import { pageToTitle } from 'docs/src/modules/utils/helpers';
-import actionTypes from 'docs/src/modules/redux/actionTypes';
 
 // Disaply a progress bar between route transitions
 NProgress.configure({

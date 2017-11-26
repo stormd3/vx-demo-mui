@@ -7,7 +7,8 @@ import { MuiThemeProvider } from 'material-ui/styles';
 import getContext, { getTheme } from 'docs/src/modules/styles/getContext';
 import JssProvider from 'react-jss/lib/JssProvider';
 import AppFrame from 'docs/src/modules/components/AppFrame';
-import { lightTheme, darkTheme, setPrismTheme } from 'docs/src/modules/utils/prism';
+// add back in later so comment further down
+//import { lightTheme, darkTheme, setPrismTheme } from 'docs/src/modules/utils/prism';
 
 // Injected the insertion-point-jss after docssearch
 if (process.browser && !global.__INSERTION_POINT__) {
@@ -32,7 +33,8 @@ class AppWrapper extends React.Component<any, any> {
       jssStyles.parentNode.removeChild(jssStyles);
     }
 
-    setPrismTheme(lightTheme);
+    // add back in once you figure out why this is blowing up
+    // setPrismTheme(lightTheme);
   }
 
   styleContext = null;

@@ -3,7 +3,7 @@ import Show from 'components/show';
 import Legends from 'components/tiles/legends';
 import withRoot from 'docs/src/modules/components/withRoot';
 
-function Page() {
+function Present() {
   return (
     <Show
       events
@@ -228,4 +228,4 @@ export default ({ width, height, margin }) => {
   );
 };
 
-export default withRoot(Page);
+export default withRoot(Present);

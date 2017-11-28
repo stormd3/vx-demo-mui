@@ -4,7 +4,7 @@ import Pie from 'components/tiles/pie';
 
 import withRoot from 'docs/src/modules/components/withRoot';
 
-export default () => {
+function Present() {
   return (
     <Show
       events
@@ -20,3 +20,5 @@ export default () => {
     </Show>
   );
 };
+
+export default withRoot(Present);

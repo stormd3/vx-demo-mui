@@ -12,6 +12,7 @@ import Toolbar from 'material-ui/Toolbar';
 import IconButton from 'material-ui/IconButton';
 import Tooltip from 'material-ui/Tooltip';
 import MenuIcon from 'material-ui-icons/Menu';
+import Tabs, { Tab } from 'material-ui/Tabs';
 import LightbulbOutline from 'material-ui-icons/LightbulbOutline';
 import FormatTextdirectionLToR from 'material-ui-icons/FormatTextdirectionLToR';
 import FormatTextdirectionRToL from 'material-ui-icons/FormatTextdirectionRToL';
@@ -188,6 +189,11 @@ class AppFrame extends React.Component<any, any> {
                 {title}
               </Typography>
             )}
+            <Tabs>
+              <Tab label="Docs" href="docs" />
+              <Tab label="Guides" href="https://medium.com/vx-code" />
+              <Tab label="Gallery" href="gallery" />
+            </Tabs>
             <div className={classes.grow} />
           </Toolbar>
         </AppBar>

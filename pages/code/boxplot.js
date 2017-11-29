@@ -1,13 +1,15 @@
 import React from 'react';
 import Show from 'components/shownocode';
-import BarStack from 'components/tiles/barstack';
+import BoxPlot from 'components/tiles/boxplot';
 import withRoot from 'docs/src/modules/components/withRoot';
 
 function Present() {
   return (
-    <Show events margin={{ top: 80 }}
-      component={BarStack}
-      title="Bar Stack"
+    <Show
+      events={true}
+      margin={{ top: 80 }}
+      component={BoxPlot}
+      title="BoxPlot With ViolinPlot"
     >
     </Show>
   );

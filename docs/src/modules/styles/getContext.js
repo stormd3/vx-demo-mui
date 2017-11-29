@@ -4,16 +4,16 @@
 import { create, SheetsRegistry } from 'jss';
 import preset from 'jss-preset-default';
 import { createMuiTheme } from 'material-ui/styles';
-import blue from 'material-ui/colors/blue';
-import pink from 'material-ui/colors/pink';
+import red from 'material-ui/colors/red';
+import purple from 'material-ui/colors/purple';
 import createGenerateClassName from 'material-ui/styles/createGenerateClassName';
 
 export function getTheme(theme) {
   return createMuiTheme({
     direction: theme.direction,
     palette: {
-      primary: blue,
-      secondary: pink,
+      primary: red,
+      secondary: purple,
       type: theme.paletteType,
     },
   });

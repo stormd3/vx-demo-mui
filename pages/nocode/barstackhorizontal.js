@@ -1,8 +1,9 @@
 import React from 'react';
 import Show from 'components/shownocode';
 import BarStackHorizontal from 'components/tiles/barstackhorizontal';
+import withRoot from 'docs/src/modules/components/withRoot';
 
-export default () => {
+function Present() {
   return (
     <Show
       events
@@ -18,3 +19,5 @@ export default () => {
     </Show>
   );
 };
+
+export default withRoot(Present);

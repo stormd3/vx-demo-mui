@@ -1,8 +1,9 @@
 import React from 'react';
 import Show from 'components/shownocode';
 import Axis from 'components/tiles/axis';
+import withRoot from 'docs/src/modules/components/withRoot';
 
-export default () => {
+function Present() {
   return (
     <Show
       component={Axis}
@@ -17,3 +18,5 @@ export default () => {
     </Show>
   );
 };
+
+export default withRoot(Present);

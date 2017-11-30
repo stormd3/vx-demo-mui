@@ -1,8 +1,9 @@
 import React from 'react';
 import Show from 'components/shownocode';
 import Bars from 'components/tiles/bars';
+import withRoot from 'docs/src/modules/components/withRoot';
 
-export default () => {
+function Present() {
   return (
     <Show
       events
@@ -12,3 +13,5 @@ export default () => {
     </Show>
   );
 }
+
+export default withRoot(Present);

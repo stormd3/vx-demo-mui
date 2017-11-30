@@ -26,9 +26,6 @@ export default withScreenSize(
     return (
       <Page title={title}>
         <div className="container">
-          <div style={{ width: width }}>
-            <h1>{title}</h1>
-          </div>
           <div
             className={cx(
               {
@@ -63,6 +60,7 @@ export default withScreenSize(
           }
           .chart {
             border-radius: 14px;
+            margin-top: 50px;
           }
           .shadow {
             border-radius: 14px;

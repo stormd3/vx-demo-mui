@@ -189,7 +189,11 @@ class AppFrame extends React.Component<any, any> {
                 {title}
               </Typography>
             )}
-            <Tabs>
+            <Tabs
+              indicatorColor="contrast"
+              textColor="contrast"
+              centered
+              >
               <Tab label="Docs" href="/docs" />
               <Tab label="Guides" href="https://medium.com/vx-code" />
               <Tab label="Gallery" href="/gallery" />

@@ -190,9 +190,9 @@ class AppFrame extends React.Component<any, any> {
               </Typography>
             )}
             <Tabs>
-              <Tab label="Docs" href="docs" />
+              <Tab label="Docs" href="/docs" />
               <Tab label="Guides" href="https://medium.com/vx-code" />
-              <Tab label="Gallery" href="gallery" />
+              <Tab label="Gallery" href="/gallery" />
             </Tabs>
             <div className={classes.grow} />
           </Toolbar>

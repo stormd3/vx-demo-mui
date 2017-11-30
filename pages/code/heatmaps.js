@@ -1,5 +1,5 @@
 import React from 'react';
-import Show from 'components/show';
+import Show from 'components/shownocode';
 import Heatmap from 'components/tiles/heatmap';
 import withRoot from 'docs/src/modules/components/withRoot';
 

@@ -16,13 +16,32 @@ if (process.browser) {
   );
 }
 
+/*
+the categories code, nocode and special are purely arbitrary
+and are here mainly to show how findPages works for other
+projects that might want to use the findPage functionality.
+
+code comes first in the directory structure so its ZERO
+special comes second in the directory structure so its ONE
+when you check the findPages code you will see that
+code and special are hardcoded into the function.
+
+Eventually this should be fixed but for now that is how
+the folks at material-ui are using the function
+
+nocode does not need to be in the findPages code as all of the paths
+in the nocode are defined here.  findPages removes the
+need to put the absolute paths in this file like they
+are for the nocode directory.
+*/
+
 const pages = [
   {
-    ...findPages[1],
+    ...findPages[0],
     title: 'Code',
   },
   {
-    ...findPages[0],
+    ...findPages[1],
     title: 'Special',
   },
   {

@@ -50,4 +50,3 @@ const styles = theme => ({
 });
 
 export default compose(withRoot, withStyles(styles))(Home);
-//export default Home;

@@ -119,7 +119,12 @@ const styles = theme => ({
     marginLeft: 24,
     flex: '0 1 auto',
   },
+// This is where opacity could be set to zero
+// And then set everything else from contrast to actual colors
+// And then remove the current nav that shows up when
+// opacity = 0
   appBar: {
+    opacity: 1,
     transition: theme.transitions.create('width'),
     '@media print': {
       position: 'absolute',
